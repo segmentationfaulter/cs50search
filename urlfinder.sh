@@ -37,3 +37,4 @@ do
 	sort -u "$posts_file" -o "$posts_file"
 
 done < "$url_file"
+
