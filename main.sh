@@ -19,3 +19,4 @@ do
 ./textfinder.sh
 
 done
+
