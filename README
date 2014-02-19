@@ -1,0 +1,67 @@
+Overview:
+
+    This program aims to index and make searchable the subreddit for Harvard's cs50x 2014 course located at:
+
+    http://www.reddit.com/r/cs50
+
+    The idea behind the project is to make posts which have yet to be indexed by reddit or Google
+    searchable in a way that services the requirements of its average user.
+    
+    This program is split into two main areas: The indexing and the searching
+
+    - The indexing
+
+        This section of the program aims to search for all posts in the /r/cs50 subreddit and
+        create a list of all of the words used on that page.
+
+        This list is then submitted to the server which stores the data in a database for use by the searching part of the program.
+
+    - The searching
+
+        The searching part of the program aims to interpret and present the data in the database in the most
+        appropriate way, based on the user's search term
+
+What the files are:
+
+   - main.sh
+
+        This file runs the indexing side of the program non-stop until interrupted
+
+   - urlfinder.sh
+
+        This script attempts to create a list of all of the urls which point to posts on the subreddit
+
+   - textfinder.sh
+
+        This script parses the source of all of the posts in the above list and submits the data to the server
+
+   - cs50search_index.php
+
+        This script receives the data from textfinder.sh and enters it into the database
+
+   - cs50search.php
+
+        This script provides the interface and data interpretation for the user.
+
+
+Why you might like to run the indexing program
+
+   To help the indexing speed increase
+
+How to run the indexing program
+
+    simply run ./main from within this directory
+
+How to get the php files on the server
+
+    Currently, any changes to the PHP files must be checked and verified by the program administrator, /u/sundayscripter
+
+    As interest in the program increases and as the level of trust amongst the community develops, this will be addressed
+
+License
+
+    read LICENSE
+
+
+
+
